@@ -218,10 +218,11 @@
   /* Fotos */
   .taller { padding-block: 72px; }
   .taller .caps { margin-bottom: 18px; }
-  .fotos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+  .fotos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 16px; margin: 0; padding: 0; list-style: none; }
   .fotos figure { margin: 0; }
-  .fotos img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
-  .fotos figcaption { margin-top: 8px; font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+  .fotos img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; background: var(--wash); }
+  .fotos figcaption { margin-top: 10px; font-size: 0.86rem; line-height: 1.45; color: var(--muted); }
+  .fotos figcaption b { display: block; margin-bottom: 2px; font-weight: 600; font-size: 0.95rem; color: var(--ink); }
 
   /* Pasos */
   .pasos { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 5px solid var(--ink); }
@@ -379,9 +380,10 @@
   <section class="wrap taller" aria-labelledby="t-taller">
     <h2 class="caps" id="t-taller">Hecho en nuestro taller</h2>
     <ul class="fotos">
-      <li><figure><img src="img/pieza-lote-negro.jpg" alt="Lote de piezas técnicas negras en la cama de impresión" width="480" height="270" loading="lazy"><figcaption>Lote de piezas técnicas</figcaption></figure></li>
-      <li><figure><img src="img/pieza-carcasa.jpg" alt="Carcasa prototipo impresa en blanco" width="480" height="270" loading="lazy"><figcaption>Carcasa prototipo</figcaption></figure></li>
-      <li><figure><img src="img/pieza-lote-rosa.jpg" alt="Lote de piezas técnicas rosas en la cama de impresión" width="480" height="270" loading="lazy"><figcaption>Lote de piezas técnicas</figcaption></figure></li>
+      <li><figure><img src="img/pieza-mentonera.jpg" alt="Mentonera original rota junto a la nueva, impresa en el taller" width="640" height="360" loading="lazy"><figcaption><b>Mentonera descontinuada</b>La original rota (der.) y la nueva que diseñamos e imprimimos (izq.).</figcaption></figure></li>
+      <li><figure><img src="img/pieza-flotadores-pacf.jpg" alt="Tres flotadores en PA-CF: el de la izquierda limpio y los otros dos con defectos" width="580" height="326" loading="lazy"><figcaption><b>Flotadores en PA-CF (nylon con fibra de carbono)</b>Izquierda: material calibrado. Los otros dos: sin calibrar.</figcaption></figure></li>
+      <li><figure><img src="img/pieza-carcasa.jpg" alt="Carcasa prototipo impresa en blanco" width="480" height="270" loading="lazy"><figcaption><b>Carcasa prototipo</b>Impresa para validar forma y ensamble.</figcaption></figure></li>
+      <li><figure><img src="img/pieza-lote-negro.jpg" alt="Lote de piezas técnicas negras en la cama de impresión" width="480" height="270" loading="lazy"><figcaption><b>Lote de piezas técnicas</b>Producción en serie en la misma cama.</figcaption></figure></li>
     </ul>
   </section>
 
@@ -401,7 +403,7 @@
       <h2 class="caps">Contacto</h2>
       <ul>
         <li><span>WhatsApp</span><a href="https://wa.me/527205860142" target="_blank" rel="noopener">720 586 0142</a></li>
-        <li><span>Correo</span><a href="mailto:replix3d@gmail.com">replix3d@gmail.com</a></li>
+        <li><span>Correo</span><a href="mailto:benjamin@3dreplix.com">benjamin@3dreplix.com</a></li>
         <li><span>Taller</span>Cuautitlán Izcalli, Estado de México</li>
       </ul>
     </div>
